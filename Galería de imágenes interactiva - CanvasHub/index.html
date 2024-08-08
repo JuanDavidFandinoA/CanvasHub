@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CanvasHub</title>
+    <meta name="author" content="Juan David Fandiño Ardila">
+    <meta name="description" content="Where expression, imagination and reality come together. Join the best interactive gallery out there! Unleash all your creativity and share the feeling with others.">
+    <link rel="icon" href=canvashublogo.ico>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<header>
+        <a href="index.html"><img src="CanvasHub.png" alt="Logo de Canvas Hub de colores rojo, rosado, naranja, verde y azul " width="100vw"></a>
+        <a href="index.html"><h1>CanvasHub</h1></a>
+</header>
+<body>
+    <div class="gallery-container">
+        <h1>Bienvenid@ a la mejor galería de imágenes interactiva en la que podras expresarte como eres y jugar con tus propias reglas. ¡Tu imaginación es el limite!</h1>
+        <div class="input-section">
+            <input type="text" id="image-url" placeholder="URL de la imagen">
+            <input type="text" id="image-title" placeholder="Título de la imagen">
+            <input type="text" id="image-description" placeholder="Descripción de la imagen">
+            <button id="add-image-btn">Añadir Imagen</button>
+        </div>
+        <div class="gallery" id="gallery"></div>
+    </div>
+
+    <div class="modal" id="image-modal">
+        <span class="close-modal" id="close-modal">&times;</span>
+        <img class="modal-content" id="modal-image">
+        <div id="modal-caption"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
